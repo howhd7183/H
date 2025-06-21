@@ -5,10 +5,10 @@ services:
     container_name: wg-easy
     environment:
       # Replace with your actual public IP or hostname
-      - WG_HOST=your_server_public_ip_or_hostname
+      - WG_HOST=10.6.152.7
       - WG_PORT=51820
-      - WG_DEFAULT_ADDRESS=10.8.0.x # Optional: set a default IP range for clients, e.g., 10.8.0.0/24
-      - PASSWORD=your_admin_password # **CRITICAL: Change this to a strong password**
+      - WG_DEFAULT_ADDRESS=10.8.0.0/24 # Optional: set a default IP range for clients, e.g., 10.8.0.0/24
+      - PASSWORD=22122017 # **CRITICAL: Change this to a strong password**
       # Optional: set timezone
       - TZ=Asia/Yangon # Adjust for your timezone
     volumes:
